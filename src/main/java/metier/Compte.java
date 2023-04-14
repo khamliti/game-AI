@@ -7,6 +7,15 @@ public class Compte implements Serializable {
     private int code;
     private double solde;
     private Date dateCreation;
+    public Compte() {
+        super();
+    }
+
+    public Compte(int code,double solde,Date dateCreation) {
+        this.solde = solde;
+        this.code=code;
+        this.dateCreation=dateCreation;
+    }
 
     public Date getDateCreation() {
         return dateCreation;
