@@ -29,7 +29,7 @@ public class BanqueRmiService extends UnicastRemoteObject implements IBanqueRemo
         cptes.add(new Compte(3,Math.random()*9000, new Date()));
         cptes.add(new Compte(4,Math.random()*9000, new Date()));
 
-        return cptes;
+        return cptes;//
     } //quand on veut créer des objets qui contient des methods les quelle le client peut fait appelle et l'utiliser
 
 }
